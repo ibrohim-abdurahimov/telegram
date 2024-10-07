@@ -2,6 +2,20 @@ const form = document.querySelector(".form")
 const input = document.querySelector(".inp")
 const msgContainer = document.querySelector(".msg__container")
 const timestamp = document.querySelector('.timestamp');
+const sidebar = document.querySelector(".sidebar")
+const opens = document.querySelector(".open")
+const closes = document.querySelector(".close")
+const close = document.querySelector(".chat-list")
+
+opens.addEventListener("click", ()=>{
+    sidebar.style.display = "block"
+})
+closes.addEventListener("click", ()=>{
+    sidebar.style.display = "none"
+})
+close.addEventListener("click", ()=>{
+    sidebar.style.display = "none"
+})
 
 const TEXTS = [
     "salom",
